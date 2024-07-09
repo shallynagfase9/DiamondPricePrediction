@@ -1,7 +1,5 @@
 import os
 import sys
-
-
 from src.logger import logging
 from src.exception import CustomException
 import pandas as pd
@@ -47,3 +45,15 @@ class DataIngestion:
                 self.ingestion_config.test_data_path
 
             )
+
+
+
+        except Exception as e:
+            logging.info('Error occured in Data Ingestion config')
+
+
+
+
+
+
+
